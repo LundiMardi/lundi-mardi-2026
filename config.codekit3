@@ -29,9 +29,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/build\/.gitignore",
-      "oF" : 0
+      "oF" : 1
     },
     "\/build" : {
       "ft" : 65536,
@@ -180,6 +180,25 @@
       "oF" : 1,
       "sC" : 1,
       "tS" : 0
+    },
+    "\/readme.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/_html-partials\/readme.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 1,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
     },
     "\/Source\/_footer.kit" : {
       "cB" : 0,
