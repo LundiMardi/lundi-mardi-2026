@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 112">
+  <defs>
+    <style>
+      .a{font-size:16px;font-family: -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; font-style: italic; text-align:center;}
+    </style>
+  </defs>
+  <title>Drapeau Lundi Mardi</title>
+  <text class="a" transform="translate(2.8 16.08)">L<tspan class="b" x="9" y="3.2">U</tspan><tspan class="c" x="22.28" y="-3.2">N</tspan><tspan class="d" x="34.79" y="-4.8">D</tspan><tspan x="46.08" y="-1.6">I</tspan><tspan class="e" x="-3.4" y="16">M</tspan><tspan class="d" x="9.7" y="19.2">A</tspan><tspan class="c" x="20.39" y="12.8">R</tspan><tspan class="d" x="31.48" y="11.2">D</tspan><tspan x="42.77" y="14.4">I</tspan><tspan x="39.46" y="30.4">I</tspan><tspan x="36.15" y="46.4">I</tspan><tspan x="32.84" y="62.4">I</tspan><tspan x="29.53" y="78.4">I</tspan><tspan x="26.21" y="94.4">I</tspan></text>
+</svg>

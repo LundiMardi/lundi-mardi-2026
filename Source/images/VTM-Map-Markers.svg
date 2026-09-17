@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="768" viewBox="0 0 1024 768" xmlns:xlink="http://www.w3.org/1999/xlink" style="background:#b8bbcc">
+  <defs>
+    <rect id="a" width="90" height="90"/>
+    <polygon id="d" points="73 60 52.962 73.94 49 82 45 88 46 73 27 60 50 44"/>
+    <filter id="b" width="169.6%" height="172.7%" x="-34.8%" y="-36.4%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+    </filter>
+    <rect id="e" width="90" height="90"/>
+    <polygon id="h" points="73 60 52.962 73.94 49 82 45 88 46 73 27 60 50 44"/>
+    <filter id="f" width="169.6%" height="172.7%" x="-34.8%" y="-36.4%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+    </filter>
+    <rect id="i" width="90" height="90" x="222"/>
+    <polygon id="l" points="295 60 274.962 73.94 271 82 267 88 268 73 249 60 272 44"/>
+    <filter id="j" width="169.6%" height="172.7%" x="-34.8%" y="-36.4%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+    </filter>
+    <rect id="m" width="120" height="120"/>
+    <polygon id="p" points="88 90 67.962 103.94 64 112 60 118 61 103 42 90 65 74"/>
+    <filter id="o" width="169.6%" height="172.7%" x="-34.8%" y="-36.4%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+    </filter>
+    <rect id="q" width="90" height="90" x="222" y="266"/>
+    <polygon id="t" points="295 326 274.962 339.94 271 348 267 354 268 339 249 326 272 310"/>
+    <filter id="r" width="169.6%" height="172.7%" x="-34.8%" y="-36.4%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+    </filter>
+    <rect id="u" width="90" height="90"/>
+    <polygon id="x" points="73 60 52.962 73.94 49 82 45 88 46 73 27 60 50 44"/>
+    <filter id="v" width="169.6%" height="172.7%" x="-34.8%" y="-36.4%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(246 190)">
+      <g transform="translate(444)">
+        <mask id="c" fill="white">
+          <use xlink:href="#a"/>
+        </mask>
+        <g opacity=".5" stroke-linejoin="bevel" filter="url(#b)" mask="url(#c)">
+          <use fill="#222222" xlink:href="#d"/>
+          <path stroke="#222222" stroke-width="4" d="M54.5284118,75.2861354 L50.7369678,83.0000995 L42.5057671,95.3469006 L43.9284942,74.0059938 L23.4781461,60.0136504 L50,41.5636651 L76.5022314,60 L54.5284118,75.2861354 Z"/>
+        </g>
+        <polygon fill="#FFFFFF" fill-rule="nonzero" points="45 63 14 32 45 1 76 32" mask="url(#c)"/>
+        <polygon fill="#FFFFFF" points="40 56 50 56 49 88 47 90 43 90 41 88" mask="url(#c)"/>
+        <polygon fill="#969696" points="43 52 47 52 47 90 45 90 43 90" mask="url(#c)"/>
+        <polygon fill="#969696" fill-rule="nonzero" points="45 8 21 32 45 56 69 32" mask="url(#c)"/>
+      </g>
+      <mask id="g" fill="white">
+        <use xlink:href="#e"/>
+      </mask>
+      <g opacity=".5" stroke-linejoin="bevel" filter="url(#f)" mask="url(#g)">
+        <use fill="#222222" xlink:href="#h"/>
+        <path stroke="#222222" stroke-width="4" d="M54.5284118,75.2861354 L50.7369678,83.0000995 L42.5057671,95.3469006 L43.9284942,74.0059938 L23.4781461,60.0136504 L50,41.5636651 L76.5022314,60 L54.5284118,75.2861354 Z"/>
+      </g>
+      <polygon fill="#FFFFFF" fill-rule="nonzero" points="45 63 14 32 45 1 76 32" mask="url(#g)"/>
+      <polygon fill="#FFFFFF" points="40 56 50 56 49 88 47 90 43 90 41 88" mask="url(#g)"/>
+      <polygon fill="#222222" points="43 52 47 52 47 90 45 90 43 90" mask="url(#g)"/>
+      <polygon fill="#222222" fill-rule="nonzero" points="45 8 21 32 45 56 69 32" mask="url(#g)"/>
+      <mask id="k" fill="white">
+        <use xlink:href="#i"/>
+      </mask>
+      <g opacity=".5" stroke-linejoin="bevel" filter="url(#j)" mask="url(#k)">
+        <use fill="#222222" xlink:href="#l"/>
+        <path stroke="#222222" stroke-width="4" d="M276.528412,75.2861354 L272.736968,83.0000995 L264.505767,95.3469006 L265.928494,74.0059938 L245.478146,60.0136504 L272,41.5636651 L298.502231,60 L276.528412,75.2861354 Z"/>
+      </g>
+      <polygon fill="#FFFFFF" fill-rule="nonzero" points="267 63 236 32 267 1 298 32" mask="url(#k)"/>
+      <polygon fill="#FFFFFF" points="262 56 272 56 271 88 269 90 265 90 263 88" mask="url(#k)"/>
+      <polygon fill="#14BA5C" points="265 52 269 52 269 90 267 90 265 90" mask="url(#k)"/>
+      <polygon fill="#14BA5C" fill-rule="nonzero" points="267 8 243 32 267 56 291 32" mask="url(#k)"/>
+      <g transform="translate(429 236)">
+        <mask id="n" fill="white">
+          <use xlink:href="#m"/>
+        </mask>
+        <polygon fill="#FFFFFF" fill-rule="nonzero" points="60 65 29 34 60 3 91 34" mask="url(#n)"/>
+        <polygon fill="#969696" fill-rule="nonzero" points="60 10 36 34 60 58 84 34" mask="url(#n)"/>
+        <g opacity=".5" stroke-linejoin="bevel" filter="url(#o)" mask="url(#n)">
+          <use fill="#222222" xlink:href="#p"/>
+          <path stroke="#222222" stroke-width="4" d="M69.5284118,105.286135 L65.7369678,113.0001 L57.5057671,125.346901 L58.9284942,104.005994 L38.4781461,90.0136504 L65,71.5636651 L91.5022314,90 L69.5284118,105.286135 Z"/>
+        </g>
+        <polygon fill="#FFFFFF" fill-rule="nonzero" points="60 93 29 62 60 31 91 62" mask="url(#n)"/>
+        <polygon fill="#FFFFFF" points="55 86 65 86 64 118 62 120 58 120 56 118" mask="url(#n)"/>
+        <polygon fill="#969696" points="58 82 62 82 62 120 60 120 58 120" mask="url(#n)"/>
+        <polygon fill="#969696" fill-rule="nonzero" points="60 38 36 62 60 86 84 62" mask="url(#n)"/>
+      </g>
+      <mask id="s" fill="white">
+        <use xlink:href="#q"/>
+      </mask>
+      <g opacity=".5" stroke-linejoin="bevel" filter="url(#r)" mask="url(#s)">
+        <use fill="#222222" xlink:href="#t"/>
+        <path stroke="#222222" stroke-width="4" d="M276.528412,341.286135 L272.736968,349.0001 L264.505767,361.346901 L265.928494,340.005994 L245.478146,326.01365 L272,307.563665 L298.502231,326 L276.528412,341.286135 Z"/>
+      </g>
+      <polygon fill="#FFFFFF" fill-rule="nonzero" points="267 329 236 298 267 267 298 298" mask="url(#s)"/>
+      <polygon fill="#FFFFFF" points="262 322 272 322 271 354 269 356 265 356 263 354" mask="url(#s)"/>
+      <polygon fill="#14BA5C" points="265 318 269 318 269 356 267 356 265 356" mask="url(#s)"/>
+      <polygon fill="#14BA5C" fill-rule="nonzero" points="267 274 243 298 267 322 291 298" mask="url(#s)"/>
+      <polygon fill="#FFFFFF" points="279 298 267.086 310 255 298 267.086 286" mask="url(#s)"/>
+    </g>
+    <g transform="translate(246 456)">
+      <mask id="w" fill="white">
+        <use xlink:href="#u"/>
+      </mask>
+      <g opacity=".5" stroke-linejoin="bevel" filter="url(#v)" mask="url(#w)">
+        <use fill="#222222" xlink:href="#x"/>
+        <path stroke="#222222" stroke-width="4" d="M54.5284118,75.2861354 L50.7369678,83.0000995 L42.5057671,95.3469006 L43.9284942,74.0059938 L23.4781461,60.0136504 L50,41.5636651 L76.5022314,60 L54.5284118,75.2861354 Z"/>
+      </g>
+      <polygon fill="#FFFFFF" fill-rule="nonzero" points="45 63 14 32 45 1 76 32" mask="url(#w)"/>
+      <polygon fill="#FFFFFF" points="40 56 50 56 49 88 47 90 43 90 41 88" mask="url(#w)"/>
+      <polygon fill="#222222" points="43 52 47 52 47 90 45 90 43 90" mask="url(#w)"/>
+      <polygon fill="#222222" fill-rule="nonzero" points="45 8 21 32 45 56 69 32" mask="url(#w)"/>
+      <polygon fill="#FFFFFF" points="57 32 45.086 44 33 32 45.086 20" mask="url(#w)"/>
+    </g>
+  </g>
+</svg>

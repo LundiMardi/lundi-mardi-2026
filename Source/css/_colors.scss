@@ -1,0 +1,42 @@
+/* Colours */
+$machine-green: #C9CE96 ;
+$navy-blue: #1111AA;
+$warm-grey-medium: #828078 ;
+$neutral-grey-light: #bbb ;
+$cold-grey-light: #B8BBCC ;
+
+
+$link-border-color: $navy-blue ;
+$grey-text: $warm-grey-medium ;
+
+
+.greyed {
+  color: $neutral-grey-light ;
+}
+.bg-cold-grey {
+  background-color: $cold-grey-light ;
+}
+
+.bg-machine-green { background-color: $machine-green ; }
+.machine-green { color: $machine-green ; }
+
+.bg-mobino-red { background-color: #E15D5D ; }
+.mobino-red { color: #E15D5D ; }
+.bg-mobino-cold-faded-grey { background-color: #f2f4f9 ; }
+.mobino-cold-faded-grey { color: #f2f4f9 ; }
+
+.bg-ayahuasca-paper { background-color: #fffbed ; }
+.ayahuasca-paper { color: #fffbed ; }
+
+.bg-vtm-violet { background-color: #8000FF ; }
+.vtm-violet { color: #8000FF ; }
+.bg-vtm-faded-green { background-color: #e9f1ef ; }
+.vtm-faded-green { color: #e9f1ef ; }
+
+@media screen and (min-width:960px) {
+
+  .bg-white-l { background-color: white ; }
+  .bg-mobino-red-l { background-color: #E15D5D ; }
+  .mobino-red-l { color: #E15D5D ; }
+
+}
