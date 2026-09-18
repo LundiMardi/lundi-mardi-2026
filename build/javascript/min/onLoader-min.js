@@ -1,1 +1,0 @@
-window.onload=function(){pttrnAccordion(),pttrnVideoPlayer(),colorReverser()};
