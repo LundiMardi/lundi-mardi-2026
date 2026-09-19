@@ -4,7 +4,7 @@ E-commerce
 
 Van Zoetendaal Publishers
 
-Édition d’art / photographie	
+Art / photography publishing	
 
-- architecture de l’information
-- design visuel
+- information architecture
+- visual design

@@ -1,11 +1,11 @@
 ### Bookworld
 
-Appli iPad	
+iPad app	
 
 Orange Vallée
 
 Social		 
 
-- expérience utilisateur
-- design visuel
-- identité 
+- user experience
+- visual design
+- identity 

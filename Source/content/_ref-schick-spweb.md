@@ -1,13 +1,13 @@
 ### SP web
 
-Logiciel	
+Software	
 
 Schick Electronic SA	
 
 Infrastructure	
 
 
-- enquête contextuelle
-- design d’interaction
-- expérience utilisateur
-- visualisation de donnée
+- contextual inquiry
+- interaction design
+- user experience
+- data visualization

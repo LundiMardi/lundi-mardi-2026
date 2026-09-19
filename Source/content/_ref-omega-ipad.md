@@ -1,11 +1,11 @@
 ### Omega Boutique Tool	
 
-Appli iPad	
+iPad app	
 
 Omega SA
 
-Luxe		
+Luxury		
 
-- design d’interaction
-- design visuel
+- interaction design
+- visual design
 

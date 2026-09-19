@@ -25,6 +25,14 @@
   ],
   "creatorBuild" : "34892",
   "files" : {
+    "\/.claude\/settings.local.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/build\/.claude\/settings.local-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
@@ -555,6 +563,14 @@
       "oF" : 0,
       "oS" : 1,
       "pg" : 0
+    },
+    "\/Source\/downloads\/CV Gaël Paccard_EN.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/downloads\/CV Gaël Paccard_EN.pdf",
+      "oF" : 0
     },
     "\/Source\/images\/arrow-downward-light-cold-grey.svg" : {
       "ft" : 2097152,
@@ -1150,6 +1166,138 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-baby.webp" : {
+      "ft" : 8388608,
+      "iS" : 15744,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-baby.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-banana.webp" : {
+      "ft" : 8388608,
+      "iS" : 16562,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-banana.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-bier.webp" : {
+      "ft" : 8388608,
+      "iS" : 13430,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-bier.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-bird-flying-blue.webp" : {
+      "ft" : 8388608,
+      "iS" : 10832,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-bird-flying-blue.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-bomb.webp" : {
+      "ft" : 8388608,
+      "iS" : 9778,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-bomb.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-boots.webp" : {
+      "ft" : 8388608,
+      "iS" : 15226,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-boots.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-clover.webp" : {
+      "ft" : 8388608,
+      "iS" : 12164,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-clover.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-crab.webp" : {
+      "ft" : 8388608,
+      "iS" : 18940,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-crab.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-mask.webp" : {
+      "ft" : 8388608,
+      "iS" : 13518,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-mask.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-nineties-tv-gay-dude.webp" : {
+      "ft" : 8388608,
+      "iS" : 13138,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-nineties-tv-gay-dude.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-piggy.webp" : {
+      "ft" : 8388608,
+      "iS" : 10594,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-piggy.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/Source\/images\/popt-stickers\/paccard-001-potato.webp" : {
+      "ft" : 8388608,
+      "iS" : 13514,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/popt-stickers\/paccard-001-potato.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/Source\/images\/rounded-border_navy-blue.svg" : {
@@ -2369,12 +2517,12 @@
     "bowerUseExactVersion" : 0,
     "browserRefreshDelay" : 0,
     "browserslistString" : ">0.2%, last 2 versions, Firefox ESR, not dead",
-    "buildEnvironment" : 0,
+    "buildEnvironment" : 1,
     "buildFolderActive" : 1,
     "buildFolderName" : "build",
     "cleanBuild" : 1,
     "environmentVariableEntries" : [
-      "NODE_ENV:::production"
+      "NODE_ENV:::development"
     ],
     "esLintConfigFileHandlingType" : 0,
     "esLintECMAVersion" : 7,

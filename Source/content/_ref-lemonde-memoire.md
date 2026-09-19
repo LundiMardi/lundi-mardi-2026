@@ -1,10 +1,10 @@
 ### Le Monde Mémoire n<sup>o</sup> 0
 
-Publication iPad	
+iPad publication	
 
 Le Monde	
 
-Édition	
+Publishing	
 
-- prototypage
+- prototyping
 

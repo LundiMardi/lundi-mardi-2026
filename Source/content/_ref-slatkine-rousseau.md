@@ -1,11 +1,11 @@
-### Œuvres complètes de Jean‑Jacques Rousseau
+### Complete Works of Jean‑Jacques Rousseau
 
-Site web	
+Website	
 
 Éditions Slatkine
 
-Édition académique	
+Academic publishing	
 
-- design d’interaction
-- design visuel
-- visualisation de donnée
+- interaction design
+- visual design
+- data visualization

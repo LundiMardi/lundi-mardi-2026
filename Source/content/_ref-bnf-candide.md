@@ -1,10 +1,10 @@
 ### Candide
-Appli	iPad
+iPad app
 
 Bibliothèque Nationale de France	
 
-Éducation	
+Education	
 
-- design d’interaction
-- design visuel
+- interaction design
+- visual design
 

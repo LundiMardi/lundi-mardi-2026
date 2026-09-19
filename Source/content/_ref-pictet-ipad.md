@@ -1,11 +1,11 @@
 ### Pictet AM
 
-Appli	iPad
+iPad	app
 
 Pictet Assets Management
 
 Finance	
 
-- expérience utilisateur
-- design visuel
-- atelier de conception 
+- user experience
+- visual design
+- design workshop 
