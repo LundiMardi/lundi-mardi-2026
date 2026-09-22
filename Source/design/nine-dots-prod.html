@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nine Dots</title>
+<style>
+  /* demo page only: the artwork is drawn for a light background */
+  html, body { margin: 0; background: #fdfdfd; }
+  body { min-height: 100vh; display: grid; place-items: center; }
+</style>
+</head>
+<body>
+
+<!-- ======== copy from here ======== -->
+<style>
+/* ============================ Nine Dots, 96 x 96 ============================
+   Paste this <style>, the <div class="nine-dots"> and the <script> anywhere in your page.
+   Everything is prefixed nd- / --nd- so it will not clash with your own CSS. */
+.nine-dots {
+  /* SIZE: the whole graphic (dots, tap squares) scales with this. 96px = as designed. */
+  --nd-size: 96px;
+  /* LOOP: every disc is back at its start angle (all aligned) after this many seconds */
+  --nd-loop: 360;
+  /* HOVER: every dot shrinks to this same radius (artboard units, the artboard is 260 wide;
+     the smallest dot is 12.3, keep this below it) */
+  --nd-equal-r: 9;
+  /* SCALE TRANSITION: grow (hover out, click), shrink (the clicked dot), and the easing of both */
+  --nd-up: .8s;
+  --nd-down: .15s;
+  --nd-ease: cubic-bezier(.35, 0, .07, 1);
+  /* HOVER ON A SINGLE DOT (its tap square): a small dot on its centre (colour, size in screen px, fade-in) */
+  --nd-pip: #fff;
+  --nd-pip-size: 3px;
+  --nd-fade: .2s;
+  /* COLOURS: each disc's gradient runs light > dark > light */
+  --nd-light: #fff;
+  --nd-dark: #000;
+  /* Every dot is drawn at the size of the biggest disc and only ever scaled down, so it stays sharp.
+     Must equal the biggest --nd-r below. */
+  --nd-base: 61.8;
+  --nd-s-equal: calc(var(--nd-equal-r) / var(--nd-base));
+
+  position: relative;
+  display: block;
+  flex: none;
+  width: var(--nd-size);
+  aspect-ratio: 1;
+  isolation: isolate;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nine-dots .nd-dot {
+  --nd-s-rest: calc(var(--nd-r) / var(--nd-base));   /* the script replaces this after a click */
+  --nd-dur: var(--nd-up);
+  position: absolute;
+  left: calc(var(--nd-x) / 260 * 100%);
+  top: calc(var(--nd-y) / 260 * 100%);
+  width: calc(var(--nd-base) * 2 / 260 * 100%);
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  scale: var(--nd-s-rest);
+  transition: scale var(--nd-dur) var(--nd-ease);
+}
+
+.nine-dots .nd-disc {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(90deg, var(--nd-light), var(--nd-dark) 50%, var(--nd-light));
+  will-change: transform;
+  /* --nd-turns = whole number of counter-clockwise turns per loop */
+  animation: nd-spin calc(var(--nd-loop) * 1s) linear infinite;
+}
+
+@keyframes nd-spin {
+  to { transform: rotate(calc(var(--nd-turns) * -360deg)); }
+}
+
+/* The script sets data-nd-mode: "hover" while the mouse is in (rotation frozen, all dots the same small
+   size). data-nd-down marks the one dot that was just clicked or tapped while the dots are big: it scales
+   down first, then the script resizes all dots. */
+.nine-dots[data-nd-mode="hover"] .nd-disc { animation-play-state: paused; }
+
+.nine-dots[data-nd-mode="hover"] .nd-dot,
+.nine-dots .nd-dot[data-nd-down] { scale: var(--nd-s-equal); }
+
+.nine-dots .nd-dot[data-nd-down] { --nd-dur: var(--nd-down); }
+
+/* hover on one dot, independent of the mode above: the script adds one .nd-pip per dot */
+.nine-dots .nd-pip {
+  position: absolute;
+  left: calc(var(--nd-x) / 260 * 100%);
+  top: calc(var(--nd-y) / 260 * 100%);
+  width: var(--nd-pip-size);
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: var(--nd-pip);
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity var(--nd-fade) ease;
+}
+.nine-dots .nd-pip.on { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .nine-dots .nd-disc { animation: none; }
+  .nine-dots .nd-dot, .nine-dots .nd-pip { transition: none; }
+}
+</style>
+
+<!-- x / y / r are in a 260 x 260 artboard (r = the dot's size at the start).
+     --nd-turns: bigger disc = slower. All values are different whole numbers, which is what makes
+     every disc land back on its start angle at the same moment (after --nd-loop seconds).
+     Bottom row = the 3 biggest, top row = the 3 smallest. Keep the order: it is the stacking order. -->
+<div class="nine-dots" role="group" tabindex="0"
+     aria-label="Nine slowly rotating dots. Click a dot to make it the biggest, click it again to reverse the direction.">
+    <!-- big row -->
+    <span class="nd-dot" style="--nd-x:62.2; --nd-y:197.3; --nd-r:61.8; --nd-turns:28"><i class="nd-disc"></i></span>
+    <span class="nd-dot" style="--nd-x:130.1; --nd-y:197.0; --nd-r:55.9; --nd-turns:29"><i class="nd-disc"></i></span>
+    <span class="nd-dot" style="--nd-x:197.8; --nd-y:196.8; --nd-r:49.8; --nd-turns:30"><i class="nd-disc"></i></span>
+    <!-- middle row -->
+    <span class="nd-dot" style="--nd-x:63.2; --nd-y:131.5; --nd-r:44.9; --nd-turns:31"><i class="nd-disc"></i></span>
+    <span class="nd-dot" style="--nd-x:130.5; --nd-y:130.5; --nd-r:37.7; --nd-turns:32"><i class="nd-disc"></i></span>
+    <span class="nd-dot" style="--nd-x:197.5; --nd-y:130.4; --nd-r:31.6; --nd-turns:33"><i class="nd-disc"></i></span>
+    <!-- small row -->
+    <span class="nd-dot" style="--nd-x:63.0; --nd-y:62.6; --nd-r:24.9; --nd-turns:34"><i class="nd-disc"></i></span>
+    <span class="nd-dot" style="--nd-x:130.4; --nd-y:62.6; --nd-r:18.6; --nd-turns:35"><i class="nd-disc"></i></span>
+    <span class="nd-dot" style="--nd-x:197.6; --nd-y:62.8; --nd-r:12.3; --nd-turns:36"><i class="nd-disc"></i></span>
+</div>
+
+<script>
+/* Nine Dots behaviour
+   - Mouse enters      : rotation freezes, all dots shrink to the same small size ("hover").
+   - Hover on one dot  : the dot under the pointer (its tap square) gets a small white dot on its centre.
+   - Click on a dot    : that dot becomes the biggest (rank 0). The nine ORIGINAL sizes are then handed
+                         out along a counter-clockwise square spiral that starts at the clicked dot and
+                         first steps UP (rank 1 = the dot above it). Spots outside the grid are skipped,
+                         so the next dot on the spiral takes the size. The dots grow to that arrangement
+                         exactly like they do when the mouse leaves, and rotation resumes. The hover
+                         state does NOT come back until the mouse has left the graphic once.
+   - Same dot again    : clicking the dot that is already the biggest flips the spiral to clockwise
+                         (first step is still up); a third click flips it back, any other dot starts
+                         counter-clockwise again.
+   - Click / tap without hover (dots are big): only the clicked dot scales down to the small size first,
+                         then all dots resize to the new arrangement.
+   - Mouse leaves      : dots grow to the current arrangement; the next entry is a normal hover again.
+   - Tap area          : nine squares, side = distance between neighbouring dot centres (about 25 px at
+                         96 px), centred on the dots. The outer squares reach the edge of the graphic.
+   - Keyboard          : Tab acts as hover, Enter / Space picks the next dot in reading order. */
+(() => {
+  const ART = 260;                                       // artboard, same number as in the CSS
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const val = (el, p) => parseFloat(getComputedStyle(el).getPropertyValue(p));
+  const avg = a => a.reduce((s, v) => s + v, 0) / a.length;
+
+  document.querySelectorAll('.nine-dots').forEach(init);
+
+  function init(nd) {
+    const dots  = [...nd.querySelectorAll('.nd-dot')];
+    const R     = dots.map(d => val(d, '--nd-r'));       // the nine original sizes (start layout)
+    const SIZES = [...R].sort((a, b) => b - a);          // biggest first
+    const BASE  = val(nd, '--nd-base');
+    const downMs = () => reduced ? 0 : val(nd, '--nd-down') * 1000;
+
+    // one small dot per dot, same centre; shown on the dot under the pointer
+    const pips = dots.map(d => {
+      const p = document.createElement('span');
+      p.className = 'nd-pip'; p.setAttribute('aria-hidden', 'true');
+      p.style.setProperty('--nd-x', val(d, '--nd-x')); p.style.setProperty('--nd-y', val(d, '--nd-y'));
+      nd.appendChild(p); return p;
+    });
+
+    // grid position of every dot (dots are listed bottom row first: row 2 = bottom)
+    const cell = dots.map((_, i) => ({ col: i % 3, row: 2 - Math.floor(i / 3) }));
+    const gx = [0, 1, 2].map(c => avg(dots.filter((_, i) => cell[i].col === c).map(d => val(d, '--nd-x'))));
+    const gy = [0, 1, 2].map(r => avg(dots.filter((_, i) => cell[i].row === r).map(d => val(d, '--nd-y'))));
+    const nearest = (centres, v) =>
+      centres.reduce((best, c, i) => Math.abs(v - c) < Math.abs(v - centres[best]) ? i : best, 0);
+
+    // pointer position -> dot index (nearest grid centre on each axis = square tap areas)
+    function hit(e) {
+      const b  = nd.getBoundingClientRect();
+      const col = nearest(gx, (e.clientX - b.left) / b.width  * ART);
+      const row = nearest(gy, (e.clientY - b.top)  / b.height * ART);
+      return cell.findIndex(c => c.col === col && c.row === row);
+    }
+
+    // Square spiral around the clicked dot, inside out, first step UP.
+    // Counter-clockwise: up 1, left 1, down 2, right 2, up 3, left 3, down 4, right 4, ...
+    // Clockwise (mirror image): up 1, right 1, down 2, left 2, up 3, right 3, ...
+    // Cells outside the 3 x 3 grid are skipped, so the next dot on the spiral takes over.
+    // Returns the nine dots in size order (first = the clicked dot = biggest).
+    function spiral(sel, cw) {
+      const dotAt = (col, row) => cell.findIndex(c => c.col === col && c.row === row);
+      const order = [sel];
+      let col = cell[sel].col, row = cell[sel].row;
+      const DIRS = cw ? [[0, -1], [1, 0], [0, 1], [-1, 0]]     // up, right, down, left
+                      : [[0, -1], [-1, 0], [0, 1], [1, 0]];    // up, left, down, right
+      for (let leg = 0, len = 1; order.length < dots.length && leg < 40; leg++) {
+        const [dc, dr] = DIRS[leg % 4];
+        for (let s = 0; s < len; s++) {
+          col += dc; row += dr;
+          if (col >= 0 && col < 3 && row >= 0 && row < 3) order.push(dotAt(col, row));
+        }
+        if (leg % 2 === 1) len++;                         // legs grow every second turn: 1,1,2,2,3,3,...
+      }
+      return order;
+    }
+
+    // pick = { sel: the biggest dot, cw: spiral direction }; null = the starting layout
+    function commit(pick) {
+      const r = [];
+      if (pick === null) R.forEach((v, i) => { r[i] = v; });
+      else spiral(pick.sel, pick.cw).forEach((dot, n) => { r[dot] = SIZES[n]; });
+      dots.forEach((el, i) => {
+        el.style.setProperty('--nd-s-rest', (r[i] / BASE).toFixed(4));
+        el.style.zIndex = Math.round((BASE - r[i]) * 10);  // bigger = further back
+      });
+    }
+
+    let mode = 'rest', pending = null, timer = 0, kb = 0, kbFocus = false;
+    let last = null;                                       // the previous click { sel, cw }
+    let target = -1;                                       // dot under the pointer
+    const setMode = m => { mode = m; nd.dataset.ndMode = m; };
+    const clearDown = () => dots.forEach(d => d.removeAttribute('data-nd-down'));
+
+    function setTarget(i) {
+      if (i === target) return;
+      if (target >= 0) pips[target].classList.remove('on');
+      target = i;
+      if (i >= 0) pips[i].classList.add('on');
+    }
+
+    function finish() {                                    // end of the scale-down: resize everything
+      timer = 0;
+      if (pending !== null) { commit(pending); pending = null; }
+      clearDown();
+    }
+    function settle() {                                    // apply a waiting selection right now
+      clearTimeout(timer); timer = 0;
+      if (pending !== null) { commit(pending); pending = null; }
+      clearDown();
+    }
+    function enter() { settle(); setMode('hover'); }
+    function leave() { settle(); setMode('rest'); }
+
+    function select(sel) {
+      // same dot clicked again: flip the spiral direction; a different dot always starts counter-clockwise
+      const pick = { sel, cw: !!last && last.sel === sel && !last.cw };
+      last = pick;
+      if (mode === 'hover') {                              // dots are small already: just grow
+        commit(pick); setMode('rest'); return;
+      }
+      pending = pick;
+      dots[sel].setAttribute('data-nd-down', '');         // dots are big: only the clicked dot scales down first
+      if (timer) return;                                   // a scale-down is already running: retarget it
+      timer = setTimeout(finish, downMs());
+    }
+
+    commit(null); setMode('rest');
+
+    nd.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch') enter(); });
+    nd.addEventListener('pointermove',  e => { if (e.pointerType !== 'touch') setTarget(hit(e)); });
+    nd.addEventListener('pointerleave', e => { if (e.pointerType !== 'touch') { leave(); setTarget(-1); } });
+    nd.addEventListener('click', e => { if (e.detail > 0) select(hit(e)); });
+
+    nd.addEventListener('focus', () => { if (nd.matches(':focus-visible')) { kbFocus = true; enter(); } });
+    nd.addEventListener('blur',  () => { if (kbFocus) { kbFocus = false; leave(); } });
+    nd.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault(); select(kb); kb = (kb + 1) % dots.length;
+      }
+    });
+  }
+})();
+</script>
+<!-- ======== to here ======== -->
+
+</body>
+</html>

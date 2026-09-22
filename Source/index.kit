@@ -7,47 +7,191 @@
 <!-- @import _nav -->
 
 
-<header id="intro" class="w-100 bg-blush-pink">
-  <div class="hero-panel w-100 w-50-l bg-white-l flex justify-center">
+<header id="intro" class="w-100 bg-hero-mint flex flex-column flex-row-l">
+  <div class="hero-visual w-100 w-50-l bg-white flex flex-column items-center justify-center">
+    <p class="hero-tagline f5 lh-copy normal hero-teal">Interaction designer based in Lausanne, Switzerland.</p>
+    <div class="nine-dots" role="group" tabindex="0"
+         aria-label="Nine slowly rotating dots. Click a dot to make it the biggest, click it again to reverse the direction.">
+      <span class="nd-dot" style="--nd-x:62.2; --nd-y:197.3; --nd-r:61.8; --nd-turns:28"><i class="nd-disc"></i></span>
+      <span class="nd-dot" style="--nd-x:130.1; --nd-y:197.0; --nd-r:55.9; --nd-turns:29"><i class="nd-disc"></i></span>
+      <span class="nd-dot" style="--nd-x:197.8; --nd-y:196.8; --nd-r:49.8; --nd-turns:30"><i class="nd-disc"></i></span>
+      <span class="nd-dot" style="--nd-x:63.2; --nd-y:131.5; --nd-r:44.9; --nd-turns:31"><i class="nd-disc"></i></span>
+      <span class="nd-dot" style="--nd-x:130.5; --nd-y:130.5; --nd-r:37.7; --nd-turns:32"><i class="nd-disc"></i></span>
+      <span class="nd-dot" style="--nd-x:197.5; --nd-y:130.4; --nd-r:31.6; --nd-turns:33"><i class="nd-disc"></i></span>
+      <span class="nd-dot" style="--nd-x:63.0; --nd-y:62.6; --nd-r:24.9; --nd-turns:34"><i class="nd-disc"></i></span>
+      <span class="nd-dot" style="--nd-x:130.4; --nd-y:62.6; --nd-r:18.6; --nd-turns:35"><i class="nd-disc"></i></span>
+      <span class="nd-dot" style="--nd-x:197.6; --nd-y:62.8; --nd-r:12.3; --nd-turns:36"><i class="nd-disc"></i></span>
+    </div>
+    <script>
+    (() => {
+      const ART = 260;
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const val = (el, p) => parseFloat(getComputedStyle(el).getPropertyValue(p));
+      const avg = a => a.reduce((s, v) => s + v, 0) / a.length;
+
+      document.querySelectorAll('.nine-dots').forEach(init);
+
+      function init(nd) {
+        const dots  = [...nd.querySelectorAll('.nd-dot')];
+        const R     = dots.map(d => val(d, '--nd-r'));
+        const SIZES = [...R].sort((a, b) => b - a);
+        const BASE  = val(nd, '--nd-base');
+        const downMs = () => reduced ? 0 : val(nd, '--nd-down') * 1000;
+
+        const pips = dots.map(d => {
+          const p = document.createElement('span');
+          p.className = 'nd-pip'; p.setAttribute('aria-hidden', 'true');
+          p.style.setProperty('--nd-x', val(d, '--nd-x')); p.style.setProperty('--nd-y', val(d, '--nd-y'));
+          nd.appendChild(p); return p;
+        });
+
+        const cell = dots.map((_, i) => ({ col: i % 3, row: 2 - Math.floor(i / 3) }));
+        const gx = [0, 1, 2].map(c => avg(dots.filter((_, i) => cell[i].col === c).map(d => val(d, '--nd-x'))));
+        const gy = [0, 1, 2].map(r => avg(dots.filter((_, i) => cell[i].row === r).map(d => val(d, '--nd-y'))));
+        const nearest = (centres, v) =>
+          centres.reduce((best, c, i) => Math.abs(v - c) < Math.abs(v - centres[best]) ? i : best, 0);
+
+        function hit(e) {
+          const b  = nd.getBoundingClientRect();
+          const col = nearest(gx, (e.clientX - b.left) / b.width  * ART);
+          const row = nearest(gy, (e.clientY - b.top)  / b.height * ART);
+          return cell.findIndex(c => c.col === col && c.row === row);
+        }
+
+        function spiral(sel, cw) {
+          const dotAt = (col, row) => cell.findIndex(c => c.col === col && c.row === row);
+          const order = [sel];
+          let col = cell[sel].col, row = cell[sel].row;
+          const DIRS = cw ? [[0, -1], [1, 0], [0, 1], [-1, 0]]
+                          : [[0, -1], [-1, 0], [0, 1], [1, 0]];
+          for (let leg = 0, len = 1; order.length < dots.length && leg < 40; leg++) {
+            const [dc, dr] = DIRS[leg % 4];
+            for (let s = 0; s < len; s++) {
+              col += dc; row += dr;
+              if (col >= 0 && col < 3 && row >= 0 && row < 3) order.push(dotAt(col, row));
+            }
+            if (leg % 2 === 1) len++;
+          }
+          return order;
+        }
+
+        function commit(pick) {
+          const r = [];
+          if (pick === null) R.forEach((v, i) => { r[i] = v; });
+          else spiral(pick.sel, pick.cw).forEach((dot, n) => { r[dot] = SIZES[n]; });
+          dots.forEach((el, i) => {
+            el.style.setProperty('--nd-s-rest', (r[i] / BASE).toFixed(4));
+            el.style.zIndex = Math.round((BASE - r[i]) * 10);
+          });
+        }
+
+        let mode = 'rest', pending = null, timer = 0, kb = 0, kbFocus = false;
+        let last = null;
+        let target = -1;
+        const setMode = m => { mode = m; nd.dataset.ndMode = m; };
+        const clearDown = () => dots.forEach(d => d.removeAttribute('data-nd-down'));
+
+        function setTarget(i) {
+          if (i === target) return;
+          if (target >= 0) pips[target].classList.remove('on');
+          target = i;
+          if (i >= 0) pips[i].classList.add('on');
+        }
+
+        function finish() {
+          timer = 0;
+          if (pending !== null) { commit(pending); pending = null; }
+          clearDown();
+        }
+        function settle() {
+          clearTimeout(timer); timer = 0;
+          if (pending !== null) { commit(pending); pending = null; }
+          clearDown();
+        }
+        function enter() { settle(); setMode('hover'); }
+        function leave() { settle(); setMode('rest'); }
+
+        function select(sel) {
+          const pick = { sel, cw: !!last && last.sel === sel && !last.cw };
+          last = pick;
+          if (mode === 'hover') {
+            commit(pick); setMode('rest'); return;
+          }
+          pending = pick;
+          dots[sel].setAttribute('data-nd-down', '');
+          if (timer) return;
+          timer = setTimeout(finish, downMs());
+        }
+
+        commit(null); setMode('rest');
+
+        nd.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch') enter(); });
+        nd.addEventListener('pointermove',  e => { if (e.pointerType !== 'touch') setTarget(hit(e)); });
+        nd.addEventListener('pointerleave', e => { if (e.pointerType !== 'touch') { leave(); setTarget(-1); } });
+        nd.addEventListener('click', e => { if (e.detail > 0) select(hit(e)); });
+
+        nd.addEventListener('focus', () => { if (nd.matches(':focus-visible')) { kbFocus = true; enter(); } });
+        nd.addEventListener('blur',  () => { if (kbFocus) { kbFocus = false; leave(); } });
+        nd.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault(); select(kb); kb = (kb + 1) % dots.length;
+          }
+        });
+      }
+    })();
+    </script>
+  </div>
+  <div class="hero-intro-panel w-100 w-50-l flex justify-center">
     <div class="hero-intro">
-      <p class="hero-copy f5 lh-copy normal">I'm a designer based in Lausanne. I help teams build digital systems for their users. I do the whole research – prototyping – testing loop, and I take care of the minute implementations details in production code.</p>
+      <p class="hero-greeting f5 normal">Hello, I'm Gaël,</p>
+      <p class="hero-copy f5 lh-copy normal">I help teams build digital systems for their users. I do the whole research – prototyping – testing loop, and I take care of the minute implementations details in production code.</p>
       <p class="hero-copy f5 lh-copy normal">After two startups and independant practice I'm increasingly interested in the business side of products and companies.</p>
       <div class="hero-status">
         <p class="f6 normal">Open for work</p>
         <a href="downloads/CV Gaël Paccard_EN.pdf" class="cta f6 normal">Download my CV</a>
+        <a href="mailto:job@lundimardi.info" class="cta f6 normal">Email job@lundimardi.info</a>
       </div>
     </div>
   </div>
 </header>
 
-<div id="recentProjects" class="bg-projects-grey flex justify-center">
-  <div class="w-100 mw7 ph2 pv6">
-    <div class="project-row">
-      <h3 class="f6 b">Recent projects</h3>
-    </div>
-    <div class="project-row">
-      <h3 class="f4 normal">Popt Notes</h3>
-      <p class="f6 normal">iOS app offering intelligent yet private note taking</p>
-      <a class="f6 normal" href="https://apps.apple.com/ch/app/popt-notes/id6505097998?l=en-GB">App store</a>
-    </div>
-    <div class="project-row">
-      <h3 class="f4 normal">Time Atlas</h3>
-      <p class="f6 normal">Historical-geographical platform for the digital humanity community</p>
-      <a class="f6 normal" href="https://timeatlas.eu/about">Website</a>
-    </div>
-    <div class="project-row">
-      <h3 class="f4 normal">CarbonViz</h3>
-      <p class="f6 normal">Browser extension that quantifies the impact of your web usage</p>
-      <a class="f6 normal" href="https://chromewebstore.google.com/detail/carbonviz/lieikallcilhkihohkajnhmhkiipaaaf">Chrome</a>
+<div id="recentProjects" class="flex flex-column flex-row-l">
+  <div class="w-100 w-50-l flex items-start justify-start section-title-col">
+    <h3 class="f6 b projects-tan-text">Recent projects</h3>
+  </div>
+  <div class="w-100 w-50-l bg-projects-tan flex justify-center section-list-col">
+    <div class="w-100 ph3 recent-projects-list">
+      <a class="project-row-new" href="https://apps.apple.com/ch/app/popt-notes/id6505097998?l=en-GB">
+        <div class="project-row-text">
+          <h3 class="f5 normal">Popt Notes</h3>
+          <p class="f6 normal">iOS app offering intelligent yet private note taking</p>
+        </div>
+        <span class="project-link f6 normal">App store<!-- @import content/_html-partials/_diagonal-arrow.html --></span>
+      </a>
+      <a class="project-row-new" href="https://timeatlas.eu/about">
+        <div class="project-row-text">
+          <h3 class="f5 normal">Time Atlas</h3>
+          <p class="f6 normal">Historical-geographical platform for the digital humanity community</p>
+        </div>
+        <span class="project-link f6 normal">Website<!-- @import content/_html-partials/_diagonal-arrow.html --></span>
+      </a>
+      <a class="project-row-new" href="https://chromewebstore.google.com/detail/carbonviz/lieikallcilhkihohkajnhmhkiipaaaf">
+        <div class="project-row-text">
+          <h3 class="f5 normal">CarbonViz</h3>
+          <p class="f6 normal">Browser extension that quantifies the impact of your web usage</p>
+        </div>
+        <span class="project-link f6 normal">Chrome<!-- @import content/_html-partials/_diagonal-arrow.html --></span>
+      </a>
     </div>
   </div>
 </div>
 
 <div id="olderProjects" class="flex flex-column items-center">
-  <div class="w-100 mw7 ph2 pv4">
-    <div class="project-row">
+  <div class="w-100 flex flex-column flex-row-l">
+    <div class="w-100 w-50-l bg-white flex items-center section-title-col">
       <h3 class="f6 b">Older projects</h3>
     </div>
+    <div class="w-100 w-50-l bg-older-dark section-accent-col"></div>
   </div>
 
 <section id="projectItems">

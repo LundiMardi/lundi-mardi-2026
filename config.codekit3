@@ -256,6 +256,14 @@
       "oAP" : "\/build\/clipac.html",
       "oF" : 0
     },
+    "\/Source\/content\/_html-partials\/_diagonal-arrow.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/content\/_html-partials\/_diagonal-arrow.html",
+      "oF" : 0
+    },
     "\/Source\/content\/_html-partials\/_ref-bnf-candide.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1030,12 +1038,12 @@
       "oAP" : "\/build\/design\/layouts.pen",
       "oF" : 0
     },
-    "\/Source\/design\/nine-dots.html" : {
+    "\/Source\/design\/nine-dots-prod.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/build\/design\/nine-dots.html",
+      "oAP" : "\/build\/design\/nine-dots-prod.html",
       "oF" : 0
     },
     "\/Source\/downloads\/CV Gaël Paccard_EN.pdf" : {

@@ -28806,7 +28806,7 @@
               "height": "fill_container",
               "fill": "$color-white",
               "layout": "vertical",
-              "gap": 128,
+              "gap": 215,
               "padding": [
                 40,
                 32,
@@ -28830,14 +28830,15 @@
                 {
                   "type": "rectangle",
                   "id": "cMSAh",
+                  "context": "custom interactive code to pull from: nine-dots.html\nCenter in section",
                   "fill": {
                     "type": "image",
                     "enabled": true,
                     "url": "layouts-assets/Screenshot%202026-09-20%20at%2000.23.49.png",
                     "mode": "fill"
                   },
-                  "width": 354.5,
-                  "height": 339.5
+                  "width": 144,
+                  "height": 139
                 }
               ]
             },
@@ -28868,7 +28869,7 @@
                   "layout": "vertical",
                   "gap": "$space-3",
                   "padding": [
-                    "$space-5",
+                    "$space-0",
                     0,
                     0,
                     0
@@ -28880,7 +28881,19 @@
                       "fill": "$color-black",
                       "textGrowth": "fixed-width",
                       "width": 378,
-                      "content": "I'm Gaël and I help teams build digital systems for their users. I do the whole research – prototyping – testing loop, and I take care of the minute implementations details in production code.",
+                      "content": "Hello, I'm Gaël,",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mJKkp",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width",
+                      "width": 378,
+                      "content": "I help teams build digital systems for their users. I do the whole research – prototyping – testing loop, and I take care of the minute implementations details in production code.",
                       "lineHeight": 1.5,
                       "fontFamily": "$font-native",
                       "fontSize": "$text-size-5",
@@ -28902,7 +28915,6 @@
                       "type": "frame",
                       "id": "R2vxbg",
                       "name": "Frame 2",
-                      "width": 115,
                       "layout": "vertical",
                       "padding": [
                         16,
@@ -28996,28 +29008,7 @@
               "name": "div",
               "context": "div",
               "width": 640.12,
-              "fill": [
-                "#f2dcaaff",
-                {
-                  "type": "gradient",
-                  "gradientType": "linear",
-                  "enabled": true,
-                  "rotation": 0,
-                  "size": {
-                    "height": 1
-                  },
-                  "colors": [
-                    {
-                      "color": "#00000000",
-                      "position": 0.82
-                    },
-                    {
-                      "color": "#ebfaf836",
-                      "position": 1
-                    }
-                  ]
-                }
-              ],
+              "fill": "#f2dcaaff",
               "layout": "vertical",
               "gap": "$space-5",
               "padding": [
@@ -29360,37 +29351,7 @@
           "context": "header",
           "clip": true,
           "width": 1280,
-          "fill": [
-            "#363636ff",
-            {
-              "type": "gradient",
-              "gradientType": "linear",
-              "enabled": true,
-              "rotation": 0,
-              "size": {
-                "height": 1
-              },
-              "colors": [
-                {
-                  "color": "#f2f4fa24",
-                  "position": 0
-                },
-                {
-                  "color": "#f2ddac24",
-                  "position": 1
-                },
-                {
-                  "color": "#f2e9d300",
-                  "position": 0.29
-                },
-                {
-                  "color": "#f2e9d100",
-                  "position": 0.64
-                }
-              ]
-            }
-          ],
-          "layout": "vertical",
+          "fill": "#363636ff",
           "children": [
             {
               "type": "frame",
@@ -29437,6 +29398,14 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "LnIkq",
+              "name": "Accent panel",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#363636ff"
             }
           ]
         },
@@ -30865,6 +30834,2070 @@
                 {
                   "type": "text",
                   "id": "r3IZPx",
+                  "fill": "$color-black",
+                  "content": "Gaël Paccard",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-native",
+                  "fontSize": "$text-size-5",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "O1jNK4",
+      "x": 46086.600000000006,
+      "y": -446,
+      "name": "192.168.1.19",
+      "context": "body",
+      "clip": true,
+      "width": 1661,
+      "height": 6037,
+      "fill": "$color-white",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "O7uib",
+          "name": "header",
+          "context": "header",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "#edfaf8ff",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Z97jBc",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": 640.12,
+              "height": "fill_container",
+              "fill": "$color-white",
+              "layout": "vertical",
+              "gap": 215,
+              "padding": [
+                40,
+                32,
+                "$space-5",
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "B2uwXS",
+                  "fill": "#58a69aff",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Interaction designer based in Lausanne, Switzerland.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-native",
+                  "fontSize": "$text-size-5",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "BiWAW",
+                  "context": "custom interactive code to pull from: nine-dots.html\nCenter in section",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "layouts-assets/Screenshot%202026-09-20%20at%2000.23.49.png",
+                    "mode": "fill"
+                  },
+                  "width": 144,
+                  "height": 139
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u8cRs",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 128,
+              "padding": [
+                "$space-7",
+                32,
+                "$space-5",
+                32
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "P9OFV",
+                  "name": "Lundi Mardi designs interfaces and ident",
+                  "context": "h1",
+                  "layout": "vertical",
+                  "gap": "$space-3",
+                  "padding": [
+                    "$space-0",
+                    "$space-3"
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UKlLX",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width",
+                      "width": 378,
+                      "content": "Hello, I'm Gaël,",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tagMa",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width",
+                      "width": 378,
+                      "content": "I help teams build digital systems for their users. I do the whole research – prototyping – testing loop, and I take care of the minute implementations details in production code.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "H3EMXC",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width",
+                      "width": 378,
+                      "content": "After two startups and independant practice I'm increasingly interested in the business side of products and companies.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dyYcp",
+                      "name": "Frame 2",
+                      "layout": "vertical",
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZPX54",
+                          "fill": "$color-black",
+                          "content": "Open for work",
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-6",
+                          "fontWeight": "500"
+                        },
+                        {
+                          "id": "V6wdmu",
+                          "type": "ref",
+                          "ref": "yvThZ",
+                          "x": 0,
+                          "y": 33,
+                          "descendants": {
+                            "K7RDB": {
+                              "content": "Download my CV"
+                            }
+                          }
+                        },
+                        {
+                          "id": "t1v2w",
+                          "type": "ref",
+                          "ref": "yvThZ",
+                          "x": 0,
+                          "y": 67.8,
+                          "descendants": {
+                            "K7RDB": {
+                              "content": "Email job@lundimardi.info"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "SOELN",
+          "name": "header",
+          "context": "header",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "#00000000",
+          "alignItems": "end",
+          "children": [
+            {
+              "type": "frame",
+              "id": "rJsAQ",
+              "name": "div",
+              "context": "div",
+              "width": 640.12,
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-5",
+              "padding": [
+                "$space-5",
+                0,
+                "$space-5",
+                "$space-4"
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WFkwA",
+                  "name": "SP web",
+                  "context": "h3",
+                  "fill": "#856213ff",
+                  "content": "Recent projects",
+                  "lineHeight": 1.04,
+                  "fontFamily": "$font-native",
+                  "fontSize": "$text-size-6",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "n38Nil",
+              "name": "div",
+              "context": "div",
+              "width": 1018,
+              "fill": "#f2dcaaff",
+              "layout": "vertical",
+              "gap": "$space-5",
+              "padding": [
+                "$space-5",
+                "$space-4"
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sYY1T",
+                  "name": "Frame 7",
+                  "width": 380,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "v7p9O",
+                      "name": "div",
+                      "context": "div",
+                      "clip": true,
+                      "width": "fill_container",
+                      "gap": "$space-4",
+                      "padding": "$space-3",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "u90hT1",
+                          "name": "Frame 8",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nCkRQ",
+                              "name": "SP web",
+                              "context": "h3",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 15,
+                              "content": "Popt Notes",
+                              "lineHeight": 1.04,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "T6Yez",
+                              "name": "Software",
+                              "context": "p",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "iOS app offering intelligent yet private note taking",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rRvA3",
+                          "name": "Frame 4",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "pYydQ",
+                              "name": "Intranet",
+                              "context": "a\nhttps://apps.apple.com/ch/app/popt-notes/id6505097998?l=en-GB",
+                              "fill": "#000000",
+                              "content": "App store",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "QEAEY",
+                              "name": "diagonal-arrow-right-up-outline.svg",
+                              "clip": true,
+                              "width": 24,
+                              "height": 24,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "group",
+                                  "id": "eF0CL",
+                                  "x": 5.99420166015625,
+                                  "y": 6,
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "l1gc7c",
+                                      "x": 0,
+                                      "y": 0,
+                                      "geometry": "M12.0058 1.05c0-0.55228-0.44772-1-1-1l-8-0.05c-0.55229 0-1 0.44772-1 1 0 0.55228 0.44771 1 1 1l5.56 0-8.27 8.29c-0.18931 0.18777-0.2958 0.44336-0.2958 0.71 0 0.26664 0.10649 0.52223 0.2958 0.71 0.18777 0.18931 0.44336 0.2958 0.71 0.2958 0.26664 0 0.52223-0.10649 0.71-0.2958l8.29-8.29 0 5.58c0 0.55229 0.44772 1 1 1 0.55228 0 1-0.44771 1-1l0-7.95z",
+                                      "fill": "$color-cold-grey-light",
+                                      "width": 12.00579833984375,
+                                      "height": 12.00579833984375
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wuVTF",
+                      "name": "div",
+                      "context": "div",
+                      "clip": true,
+                      "width": "fill_container",
+                      "gap": "$space-4",
+                      "padding": "$space-3",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "artM5",
+                          "name": "Frame 8",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "UAc5r",
+                              "name": "SP web",
+                              "context": "h3",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 15,
+                              "content": "Time Atlas",
+                              "lineHeight": 1.04,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "a8TW5m",
+                              "name": "Software",
+                              "context": "p",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Historical-geographical platform for the digital humanity community",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "gAHGY",
+                          "name": "Frame 5",
+                          "height": 24,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cY22t",
+                              "name": "Intranet",
+                              "context": "a\nhref: https://timeatlas.eu/",
+                              "fill": "#000000",
+                              "content": "Website",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "kbbHE",
+                              "name": "diagonal-arrow-right-up-outline.svg",
+                              "clip": true,
+                              "width": 24,
+                              "height": 24,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "group",
+                                  "id": "c3r9hi",
+                                  "x": 5.99420166015625,
+                                  "y": 6,
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "FztLG",
+                                      "x": 0,
+                                      "y": 0,
+                                      "geometry": "M12.0058 1.05c0-0.55228-0.44772-1-1-1l-8-0.05c-0.55229 0-1 0.44772-1 1 0 0.55228 0.44771 1 1 1l5.56 0-8.27 8.29c-0.18931 0.18777-0.2958 0.44336-0.2958 0.71 0 0.26664 0.10649 0.52223 0.2958 0.71 0.18777 0.18931 0.44336 0.2958 0.71 0.2958 0.26664 0 0.52223-0.10649 0.71-0.2958l8.29-8.29 0 5.58c0 0.55229 0.44772 1 1 1 0.55228 0 1-0.44771 1-1l0-7.95z",
+                                      "fill": "$color-cold-grey-light",
+                                      "width": 12.00579833984375,
+                                      "height": 12.00579833984375
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZqBNU",
+                      "name": "div",
+                      "context": "div",
+                      "clip": true,
+                      "width": "fill_container",
+                      "gap": "$space-4",
+                      "padding": "$space-3",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "zencL",
+                          "name": "Frame 8",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NbnAK",
+                              "name": "SP web",
+                              "context": "h3",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 15,
+                              "content": "CarbonViz",
+                              "lineHeight": 1.04,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tesHL",
+                              "name": "Software",
+                              "context": "p",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Browser extension that quantifies the impact of your web usage",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "udblg",
+                          "name": "Frame 6",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "IyxyQ",
+                              "name": "iPad app",
+                              "context": "a\nhttps://chromewebstore.google.com/detail/carbonviz/lieikallcilhkihohkajnhmhkiipaaaf",
+                              "fill": "#000000",
+                              "content": "Chrome",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "LOCJ4",
+                              "name": "diagonal-arrow-right-up-outline.svg",
+                              "clip": true,
+                              "width": 24,
+                              "height": 24,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "group",
+                                  "id": "r5XiA",
+                                  "x": 5.99420166015625,
+                                  "y": 6,
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "JHokb",
+                                      "x": 0,
+                                      "y": 0,
+                                      "geometry": "M12.0058 1.05c0-0.55228-0.44772-1-1-1l-8-0.05c-0.55229 0-1 0.44772-1 1 0 0.55228 0.44771 1 1 1l5.56 0-8.27 8.29c-0.18931 0.18777-0.2958 0.44336-0.2958 0.71 0 0.26664 0.10649 0.52223 0.2958 0.71 0.18777 0.18931 0.44336 0.2958 0.71 0.2958 0.26664 0 0.52223-0.10649 0.71-0.2958l8.29-8.29 0 5.58c0 0.55229 0.44772 1 1 1 0.55228 0 1-0.44771 1-1l0-7.95z",
+                                      "fill": "$color-cold-grey-light",
+                                      "width": 12.00579833984375,
+                                      "height": 12.00579833984375
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "u5SKS",
+          "name": "header",
+          "context": "header",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "#363636ff",
+          "children": [
+            {
+              "type": "frame",
+              "id": "l6WCf",
+              "name": "div",
+              "context": "div",
+              "width": 640.12,
+              "fill": "$color-white",
+              "layout": "vertical",
+              "gap": "$space-5",
+              "padding": [
+                "$space-5",
+                "$space-4"
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KAhJ0",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    "$space-1",
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "V35NsE",
+                      "name": "SP web",
+                      "context": "h3",
+                      "fill": "#000000ff",
+                      "content": "Older projects",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ki6jE",
+              "name": "Accent panel",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#363636ff"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NUZL4",
+          "name": "section",
+          "context": "section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "KkVEW",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": "fill_container",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VIjOv",
+                  "name": "div",
+                  "context": "div",
+                  "width": 640.12,
+                  "height": 400,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "D0kWit",
+                      "name": "a",
+                      "context": "a",
+                      "height": 431.79,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "i7z5KE",
+                          "name": "img",
+                          "context": "img",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "layouts-assets/264eaf7c404b5fc9.jpg",
+                            "mode": "stretch"
+                          },
+                          "width": 511.99,
+                          "height": 425.49
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q0U8Gt",
+                  "name": "div",
+                  "context": "div",
+                  "width": "fill_container",
+                  "height": 800,
+                  "fill": "$color-ice-blue",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "a4WLP",
+                      "x": 0,
+                      "y": 311.26,
+                      "name": "a",
+                      "context": "a",
+                      "layout": "vertical",
+                      "padding": [
+                        32,
+                        0,
+                        15.99,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "fQ9YP",
+                          "name": "Mobino",
+                          "context": "h3",
+                          "height": 24,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            "$space-4"
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Y9SF1",
+                              "fill": "$color-black",
+                              "content": "Mobino",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-5",
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PR026",
+                      "x": 0,
+                      "y": 383.26,
+                      "name": "ul",
+                      "context": "ul",
+                      "height": 24,
+                      "gap": 116.03,
+                      "padding": [
+                        0,
+                        11.99,
+                        0,
+                        "$space-4"
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fdEL8",
+                          "name": "Mobile apps",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "Mobile apps",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "H1Pa1",
+                          "name": "Marketing website",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "Marketing website",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "n61sli",
+                          "name": "Visual identity",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "Visual identity",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "G3r7F",
+                      "x": 0,
+                      "y": 439.26,
+                      "name": "a",
+                      "context": "a",
+                      "height": 49.47,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        "$space-4"
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "xP6yr",
+                          "name": "description and images",
+                          "context": "span",
+                          "height": 33.48,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            2.4,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "P3CjX",
+                              "fill": "$color-black",
+                              "content": "description and images",
+                              "lineHeight": 2,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ycDmX",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": "fill_container",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rirf0",
+                  "name": "div",
+                  "context": "div",
+                  "height": 400,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "noxC5",
+                      "name": "a",
+                      "context": "a",
+                      "height": 462.4,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "mvpC2",
+                          "name": "img",
+                          "context": "img",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "layouts-assets/7f1169686eda0afc.jpg",
+                            "mode": "stretch"
+                          },
+                          "width": 608.13,
+                          "height": 456.09
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Cb6Bz",
+                  "name": "div",
+                  "context": "div",
+                  "width": "fill_container",
+                  "height": 800,
+                  "fill": "$color-cream",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "KGA3F",
+                      "x": 0,
+                      "y": 311.26,
+                      "name": "a",
+                      "context": "a",
+                      "layout": "vertical",
+                      "padding": [
+                        32,
+                        0,
+                        15.99,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "RaYuT",
+                          "name": "Ayahuasca Science Mapping",
+                          "context": "h3",
+                          "height": 24,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "y42ZN",
+                              "fill": "$color-black",
+                              "content": "Ayahuasca Science Mapping",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-5",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AOU3P",
+                      "x": 0,
+                      "y": 383.26,
+                      "name": "ul",
+                      "context": "ul",
+                      "width": 511.99,
+                      "height": 24,
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        16
+                      ],
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "e0Ch4",
+                          "name": "website",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "website",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "J9qrHW",
+                      "x": 0,
+                      "y": 439.26,
+                      "name": "a",
+                      "context": "a",
+                      "width": 151.25,
+                      "height": 49.47,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "M24l5B",
+                          "name": "description and images",
+                          "context": "span",
+                          "width": "fill_container",
+                          "height": 33.48,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            2.4,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QHOSN",
+                              "fill": "$color-black",
+                              "content": "description and images",
+                              "lineHeight": 2,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s9zrI",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": "fill_container",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lJWmH",
+                  "name": "div",
+                  "context": "div",
+                  "height": 400,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Stz0P",
+                      "name": "a",
+                      "context": "a",
+                      "height": 462.4,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "Afw2V",
+                          "name": "img",
+                          "context": "img",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "layouts-assets/1058ee4c7f9c74ed.jpg",
+                            "mode": "stretch"
+                          },
+                          "width": 608.13,
+                          "height": 456.09
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JxJfu",
+                  "name": "div",
+                  "context": "div",
+                  "width": "fill_container",
+                  "height": 800,
+                  "fill": "$color-mint",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "U6lAi",
+                      "x": 0,
+                      "y": 311.26,
+                      "name": "a",
+                      "context": "a",
+                      "layout": "vertical",
+                      "padding": [
+                        32,
+                        0,
+                        15.99,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "sW0CZ",
+                          "name": "Venice Time Machine",
+                          "context": "h3",
+                          "height": 24,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "L9X03t",
+                              "fill": "$color-black",
+                              "content": "Venice Time Machine",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-5",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hJWOl",
+                      "x": 0,
+                      "y": 383.26,
+                      "name": "ul",
+                      "context": "ul",
+                      "height": 24,
+                      "gap": 128.1,
+                      "padding": [
+                        0,
+                        11.99,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "j5gKz",
+                          "name": "web app",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "web app",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "SQ7s9",
+                          "name": "interaction design",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "interaction design",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vwbUp",
+                          "name": "visual identity",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "visual identity",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ijhIN",
+                      "x": 0,
+                      "y": 439.26,
+                      "name": "a",
+                      "context": "a",
+                      "width": 151.25,
+                      "height": 49.47,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "z8rbxV",
+                          "name": "description and images",
+                          "context": "span",
+                          "width": "fill_container",
+                          "height": 33.48,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            2.4,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "uvWqF",
+                              "fill": "$color-black",
+                              "content": "description and images",
+                              "lineHeight": 2,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CKq74",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": "fill_container",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mdz34",
+                  "name": "div",
+                  "context": "div",
+                  "height": 400,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WZp1y",
+                      "name": "a",
+                      "context": "a",
+                      "height": 462.4,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "ezrBR",
+                          "name": "img",
+                          "context": "img",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "layouts-assets/fefd8a2131e1d80a.jpg",
+                            "mode": "stretch"
+                          },
+                          "width": 608.13,
+                          "height": 456.09
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d3FrQL",
+                  "name": "div",
+                  "context": "div",
+                  "width": "fill_container",
+                  "height": 800,
+                  "fill": "$color-dark-grey",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pLC1r",
+                      "x": 0,
+                      "y": 311.26,
+                      "name": "a",
+                      "context": "a",
+                      "layout": "vertical",
+                      "padding": [
+                        32,
+                        0,
+                        15.99,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "BRmPN",
+                          "name": "Clipac",
+                          "context": "h3",
+                          "height": 24,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Z04Asl",
+                              "fill": "$color-white",
+                              "content": "Clipac",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-5",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hX3As",
+                      "x": 0,
+                      "y": 383.26,
+                      "name": "ul",
+                      "context": "ul",
+                      "height": 24,
+                      "gap": 151.69,
+                      "padding": [
+                        0,
+                        11.99,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lwiLb",
+                          "name": "website",
+                          "context": "li",
+                          "fill": "$color-white",
+                          "content": "website",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "e2vTG",
+                          "name": "visual identity",
+                          "context": "li",
+                          "fill": "$color-white",
+                          "content": "visual identity",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "C6zokp",
+                          "name": "consulting",
+                          "context": "li",
+                          "fill": "$color-white",
+                          "content": "consulting",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zEqSv",
+                      "x": 0,
+                      "y": 439.26,
+                      "name": "a",
+                      "context": "a",
+                      "width": 151.25,
+                      "height": 49.47,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "k8lFr",
+                          "name": "description and images",
+                          "context": "span",
+                          "width": "fill_container",
+                          "height": 33.48,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            2.4,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "DncOM",
+                              "fill": "$color-white",
+                              "content": "description and images",
+                              "lineHeight": 2,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "h4vgg",
+          "name": "div",
+          "context": "div",
+          "width": "fill_container",
+          "height": 800,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "m6Ub9I",
+              "name": "div",
+              "context": "div",
+              "layout": "vertical",
+              "padding": [
+                128,
+                8
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KwYsH",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EbbKc",
+                      "name": "SP web",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "SP web",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Jp1oW",
+                      "name": "Software",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "Software",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GNaCR",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ETevU",
+                      "name": "PAM intranet",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "PAM intranet",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hc2jG",
+                      "name": "Intranet",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "Intranet",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "M3oPZA",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "K7EcYv",
+                      "name": "Candide",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "Candide",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "U67xD",
+                      "name": "iPad app",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "iPad app",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KQy3Q",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wvLcs",
+                      "name": "Pictet AM",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "Pictet AM",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "S3HtW7",
+                      "name": "iPad app",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "iPad app",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tEx9S",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "R0bG3",
+                      "name": "Bookworld",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "Bookworld",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "w9ivc",
+                      "name": "iPad app",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "iPad app",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "E2qej5",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "U09XD3",
+                      "name": "vanzoetendaal.com",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "vanzoetendaal.com",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "V1yXD",
+                      "name": "E-commerce",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "E-commerce",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VChlJ",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fClyP",
+                      "name": "Omega Boutique Tool",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "Omega Boutique Tool",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hKQxI",
+                      "name": "iPad app",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "iPad app",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gEWlf",
+          "name": "div",
+          "context": "div",
+          "width": "fill_container",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "u7SCXa",
+              "name": "div",
+              "context": "div",
+              "fill": [
+                "$color-ice-blue",
+                {
+                  "type": "image",
+                  "enabled": true,
+                  "url": "layouts-assets/7663e5913d90cac9.png",
+                  "mode": "stretch"
+                },
+                {
+                  "type": "image",
+                  "enabled": true,
+                  "url": "layouts-assets/monday12-e1.png",
+                  "mode": "fill"
+                }
+              ],
+              "width": "fill_container",
+              "height": 800
+            },
+            {
+              "type": "frame",
+              "id": "QJzwW",
+              "name": "div",
+              "context": "div",
+              "width": "fill_container",
+              "padding": [
+                0,
+                "$space-4"
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "P42oo7",
+                  "name": "div",
+                  "context": "div",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 15.99,
+                  "padding": [
+                    16,
+                    16,
+                    15.99,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y1RBK",
+                      "name": "Have a software or website project? Feel",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width-height",
+                      "width": "fill_container",
+                      "height": 63.99,
+                      "content": "I'm looking for a full-time Product Designer position. Open to select freelance projects too. Reach me at job@lundimardi.info",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I5h0gr",
+                      "name": "e-mail",
+                      "context": "a",
+                      "width": 58.68,
+                      "height": 51.07,
+                      "layout": "vertical",
+                      "padding": [
+                        16,
+                        0,
+                        4,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "id": "Qdpz9",
+                          "type": "ref",
+                          "ref": "yvThZ",
+                          "descendants": {
+                            "K7RDB": {
+                              "content": "Send an e-mail",
+                              "fontSize": "$text-size-4"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "l54HuZ",
+          "layoutPosition": "absolute",
+          "x": 928.18,
+          "y": 5024,
+          "name": "a",
+          "context": "a",
+          "width": "fill_container(63.98)",
+          "height": "fit_content(111.98)",
+          "layout": "vertical"
+        },
+        {
+          "type": "frame",
+          "id": "y69H4",
+          "layoutPosition": "absolute",
+          "x": 640.1199999999999,
+          "y": 0,
+          "name": "nav",
+          "context": "nav",
+          "width": "fill_container(640)",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "A1Wtm",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": "fill_container",
+              "height": 64,
+              "gap": 137.6,
+              "padding": [
+                0,
+                "$space-4"
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uBr2e",
+                  "layoutPosition": "absolute",
+                  "x": -624.13,
+                  "y": 0,
+                  "name": "LM",
+                  "context": "a",
+                  "height": 55.99,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s5gWJd",
+                      "fill": "$color-black",
+                      "content": "LM",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RgcQC",
+                  "name": "Work",
+                  "context": "a",
+                  "height": 63.99,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pUJ04",
+                      "fill": "$color-black",
+                      "content": "Work",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "K0M7M",
+                  "name": "References",
+                  "context": "a",
+                  "height": 63.99,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "n59Kv",
+                      "fill": "$color-black",
+                      "content": "References",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BPMTD",
+                  "name": "Contact",
+                  "context": "a",
+                  "height": 63.99,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BNVvg",
+                      "fill": "$color-black",
+                      "content": "Contact",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ec5Tl",
+              "layoutPosition": "absolute",
+              "x": -608.4800000000105,
+              "y": 0,
+              "name": "LM",
+              "context": "a",
+              "height": 55.99,
+              "layout": "vertical",
+              "padding": [
+                16,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZLiEf",
                   "fill": "$color-black",
                   "content": "Gaël Paccard",
                   "lineHeight": 1.5,
@@ -33016,6 +35049,2158 @@
                 {
                   "type": "text",
                   "id": "A9axfE",
+                  "fill": "$color-black",
+                  "content": "Gaël Paccard",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-native",
+                  "fontSize": "$text-size-5",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "u3afY",
+      "x": 47787.600000000006,
+      "y": -446,
+      "name": "192.168.1.19",
+      "context": "body",
+      "clip": true,
+      "width": 1661,
+      "fill": "$color-white",
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "UQjxd",
+          "name": "header",
+          "context": "header",
+          "clip": true,
+          "width": 1280,
+          "fill": "#edfaf8ff",
+          "children": [
+            {
+              "type": "frame",
+              "id": "uDI4E",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": 640.12,
+              "height": "fill_container",
+              "fill": "$color-white",
+              "layout": "vertical",
+              "gap": 128,
+              "padding": [
+                40,
+                32,
+                "$space-5",
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ptkv2",
+                  "fill": "#58a69aff",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Interaction designer based in Lausanne, Switzerland.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-native",
+                  "fontSize": "$text-size-5",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "BSmZi",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "layouts-assets/Screenshot%202026-09-20%20at%2000.23.49.png",
+                    "mode": "fill"
+                  },
+                  "width": 354.5,
+                  "height": 339.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Dkd2s",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": 640.12,
+              "layout": "vertical",
+              "gap": 128,
+              "padding": [
+                "$space-7",
+                32,
+                "$space-5",
+                32
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xaTLR",
+                  "name": "Lundi Mardi designs interfaces and ident",
+                  "context": "h1",
+                  "width": 380,
+                  "layout": "vertical",
+                  "gap": "$space-3",
+                  "padding": [
+                    "$space-0",
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wGAvJ",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width",
+                      "width": 378,
+                      "content": "Hi, I'm Gaël",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Antarctica VAR",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FSI4F",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width",
+                      "width": 378,
+                      "content": "I help teams build digital systems for their users. I do the whole research – prototyping – testing loop, and I take care of the minute implementations details in production code.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Antarctica VAR",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NTuT0",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width",
+                      "width": 378,
+                      "content": "After two startups and independant practice I'm increasingly interested in the business side of products and companies.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Antarctica VAR",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HnW0P",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width-height",
+                      "width": 97,
+                      "height": 40,
+                      "content": "Open for work",
+                      "textAlignVertical": "bottom",
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EwqqN",
+                      "name": "Frame 11",
+                      "width": "fill_container",
+                      "gap": "$space-2",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "w6TJh3",
+                          "name": "Frame 10",
+                          "layout": "vertical",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "K1U9N0",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "layouts-assets/system-001-page-1.png",
+                                "mode": "fill"
+                              },
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "type": "text",
+                              "id": "KcnM4",
+                              "fill": "#000000",
+                              "content": "CV",
+                              "fontFamily": "Inter",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "JZBjG",
+                          "name": "Frame 9",
+                          "layout": "vertical",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "J02Ont",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "layouts-assets/system-001-inbox.png",
+                                "mode": "fill"
+                              },
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "type": "text",
+                              "id": "hNlmI",
+                              "fill": "#000000",
+                              "content": "job@lundimardi.info",
+                              "fontFamily": "Inter",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Fw3EM",
+          "name": "header",
+          "context": "header",
+          "clip": true,
+          "width": 1280,
+          "fill": "#00000000",
+          "alignItems": "end",
+          "children": [
+            {
+              "type": "frame",
+              "id": "yd6Ln",
+              "name": "div",
+              "context": "div",
+              "width": 640.12,
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-5",
+              "padding": [
+                "$space-5",
+                0,
+                "$space-5",
+                "$space-4"
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nsg4Z",
+                  "name": "SP web",
+                  "context": "h3",
+                  "fill": "#856213ff",
+                  "content": "Recent projects",
+                  "lineHeight": 1.04,
+                  "fontFamily": "$font-native",
+                  "fontSize": "$text-size-6",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CsJNZ",
+              "name": "div",
+              "context": "div",
+              "width": 640.12,
+              "fill": [
+                "#f2dcaaff",
+                {
+                  "type": "gradient",
+                  "gradientType": "linear",
+                  "enabled": true,
+                  "rotation": 0,
+                  "size": {
+                    "height": 1
+                  },
+                  "colors": [
+                    {
+                      "color": "#00000000",
+                      "position": 0.82
+                    },
+                    {
+                      "color": "#ebfaf836",
+                      "position": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": "vertical",
+              "gap": "$space-5",
+              "padding": [
+                "$space-5",
+                0
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "m3ywxq",
+                  "name": "Frame 7",
+                  "width": 380,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wCzst",
+                      "name": "div",
+                      "context": "div",
+                      "clip": true,
+                      "width": "fill_container",
+                      "gap": "$space-4",
+                      "padding": [
+                        "$space-3",
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "kIcdN",
+                          "name": "Frame 8",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "W6s4D",
+                              "name": "SP web",
+                              "context": "h3",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 15,
+                              "content": "Popt Notes",
+                              "lineHeight": 1.04,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "j0rsM",
+                              "name": "Software",
+                              "context": "p",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "iOS app offering intelligent yet private note taking",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TkyO1",
+                          "name": "Frame 4",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "UyaLR",
+                              "name": "Intranet",
+                              "context": "a\nhttps://apps.apple.com/ch/app/popt-notes/id6505097998?l=en-GB",
+                              "fill": "#000000",
+                              "content": "App store",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "OHHIp",
+                              "name": "diagonal-arrow-right-up-outline.svg",
+                              "clip": true,
+                              "width": 24,
+                              "height": 24,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "group",
+                                  "id": "dfnzf",
+                                  "x": 5.99420166015625,
+                                  "y": 6,
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "JbXNK",
+                                      "x": 0,
+                                      "y": 0,
+                                      "geometry": "M12.0058 1.05c0-0.55228-0.44772-1-1-1l-8-0.05c-0.55229 0-1 0.44772-1 1 0 0.55228 0.44771 1 1 1l5.56 0-8.27 8.29c-0.18931 0.18777-0.2958 0.44336-0.2958 0.71 0 0.26664 0.10649 0.52223 0.2958 0.71 0.18777 0.18931 0.44336 0.2958 0.71 0.2958 0.26664 0 0.52223-0.10649 0.71-0.2958l8.29-8.29 0 5.58c0 0.55229 0.44772 1 1 1 0.55228 0 1-0.44771 1-1l0-7.95z",
+                                      "fill": "$color-cold-grey-light",
+                                      "width": 12.00579833984375,
+                                      "height": 12.00579833984375
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "usZmB",
+                      "name": "div",
+                      "context": "div",
+                      "clip": true,
+                      "width": "fill_container",
+                      "gap": "$space-4",
+                      "padding": [
+                        "$space-3",
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "e1JGD",
+                          "name": "Frame 8",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nA2P5",
+                              "name": "SP web",
+                              "context": "h3",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 15,
+                              "content": "Time Atlas",
+                              "lineHeight": 1.04,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "gVi7j",
+                              "name": "Software",
+                              "context": "p",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Historical-geographical platform for the digital humanity community",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "o2iG8s",
+                          "name": "Frame 5",
+                          "height": 24,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Mws5G",
+                              "name": "Intranet",
+                              "context": "a\nhref: https://timeatlas.eu/",
+                              "fill": "#000000",
+                              "content": "Website",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "aiG1u",
+                              "name": "diagonal-arrow-right-up-outline.svg",
+                              "clip": true,
+                              "width": 24,
+                              "height": 24,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "group",
+                                  "id": "kTr3h",
+                                  "x": 5.99420166015625,
+                                  "y": 6,
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "dBop4",
+                                      "x": 0,
+                                      "y": 0,
+                                      "geometry": "M12.0058 1.05c0-0.55228-0.44772-1-1-1l-8-0.05c-0.55229 0-1 0.44772-1 1 0 0.55228 0.44771 1 1 1l5.56 0-8.27 8.29c-0.18931 0.18777-0.2958 0.44336-0.2958 0.71 0 0.26664 0.10649 0.52223 0.2958 0.71 0.18777 0.18931 0.44336 0.2958 0.71 0.2958 0.26664 0 0.52223-0.10649 0.71-0.2958l8.29-8.29 0 5.58c0 0.55229 0.44772 1 1 1 0.55228 0 1-0.44771 1-1l0-7.95z",
+                                      "fill": "$color-cold-grey-light",
+                                      "width": 12.00579833984375,
+                                      "height": 12.00579833984375
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a7JPXB",
+                      "name": "div",
+                      "context": "div",
+                      "clip": true,
+                      "width": "fill_container",
+                      "gap": "$space-4",
+                      "padding": [
+                        "$space-3",
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "IhCVi",
+                          "name": "Frame 8",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "GZxUY",
+                              "name": "SP web",
+                              "context": "h3",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 15,
+                              "content": "CarbonViz",
+                              "lineHeight": 1.04,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "vSfkp",
+                              "name": "Software",
+                              "context": "p",
+                              "fill": "#000000",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Browser extension that quantifies the impact of your web usage",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SzkgK",
+                          "name": "Frame 6",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "s3Fbq",
+                              "name": "iPad app",
+                              "context": "a\nhttps://chromewebstore.google.com/detail/carbonviz/lieikallcilhkihohkajnhmhkiipaaaf",
+                              "fill": "#000000",
+                              "content": "Chrome",
+                              "lineHeight": 1.49,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-6",
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "qSExL",
+                              "name": "diagonal-arrow-right-up-outline.svg",
+                              "clip": true,
+                              "width": 24,
+                              "height": 24,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "group",
+                                  "id": "D2qwlE",
+                                  "x": 5.99420166015625,
+                                  "y": 6,
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "qUmuz",
+                                      "x": 0,
+                                      "y": 0,
+                                      "geometry": "M12.0058 1.05c0-0.55228-0.44772-1-1-1l-8-0.05c-0.55229 0-1 0.44772-1 1 0 0.55228 0.44771 1 1 1l5.56 0-8.27 8.29c-0.18931 0.18777-0.2958 0.44336-0.2958 0.71 0 0.26664 0.10649 0.52223 0.2958 0.71 0.18777 0.18931 0.44336 0.2958 0.71 0.2958 0.26664 0 0.52223-0.10649 0.71-0.2958l8.29-8.29 0 5.58c0 0.55229 0.44772 1 1 1 0.55228 0 1-0.44771 1-1l0-7.95z",
+                                      "fill": "$color-cold-grey-light",
+                                      "width": 12.00579833984375,
+                                      "height": 12.00579833984375
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D5OcIz",
+          "name": "header",
+          "context": "header",
+          "clip": true,
+          "width": 1280,
+          "fill": [
+            "#363636ff",
+            {
+              "type": "gradient",
+              "gradientType": "linear",
+              "enabled": true,
+              "rotation": 0,
+              "size": {
+                "height": 1
+              },
+              "colors": [
+                {
+                  "color": "#f2f4fa24",
+                  "position": 0
+                },
+                {
+                  "color": "#f2ddac24",
+                  "position": 1
+                },
+                {
+                  "color": "#f2e9d300",
+                  "position": 0.29
+                },
+                {
+                  "color": "#f2e9d100",
+                  "position": 0.64
+                }
+              ]
+            }
+          ],
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "FZ3Nx",
+              "name": "div",
+              "context": "div",
+              "width": 640.12,
+              "fill": "$color-white",
+              "layout": "vertical",
+              "gap": "$space-5",
+              "padding": [
+                "$space-5",
+                "$space-4"
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gyzHK",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    "$space-1",
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "i3Nbv1",
+                      "name": "SP web",
+                      "context": "h3",
+                      "fill": "#000000ff",
+                      "content": "Older projects",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "AZLz1",
+          "name": "section",
+          "context": "section",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Ohq6P",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "auIkz",
+                  "name": "div",
+                  "context": "div",
+                  "width": 640.12,
+                  "height": 400,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vP81U",
+                      "name": "a",
+                      "context": "a",
+                      "height": 431.79,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "c7ldP",
+                          "name": "img",
+                          "context": "img",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "layouts-assets/264eaf7c404b5fc9.jpg",
+                            "mode": "stretch"
+                          },
+                          "width": 511.99,
+                          "height": 425.49
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "u6G5V0",
+                  "name": "div",
+                  "context": "div",
+                  "width": 640.12,
+                  "height": 800,
+                  "fill": "$color-ice-blue",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FLp4b",
+                      "x": 0,
+                      "y": 311.26,
+                      "name": "a",
+                      "context": "a",
+                      "layout": "vertical",
+                      "padding": [
+                        32,
+                        0,
+                        15.99,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Y7t7e6",
+                          "name": "Mobino",
+                          "context": "h3",
+                          "height": 24,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            "$space-4"
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lCPbl",
+                              "fill": "$color-black",
+                              "content": "Mobino",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-5",
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TLl4W",
+                      "x": 0,
+                      "y": 383.26,
+                      "name": "ul",
+                      "context": "ul",
+                      "height": 24,
+                      "gap": 116.03,
+                      "padding": [
+                        0,
+                        11.99,
+                        0,
+                        "$space-4"
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xuBWu",
+                          "name": "Mobile apps",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "Mobile apps",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "J5Osu1",
+                          "name": "Marketing website",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "Marketing website",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aqmRt",
+                          "name": "Visual identity",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "Visual identity",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zjKIu",
+                      "x": 0,
+                      "y": 439.26,
+                      "name": "a",
+                      "context": "a",
+                      "height": 49.47,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        "$space-4"
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "oTn1d",
+                          "name": "description and images",
+                          "context": "span",
+                          "height": 33.48,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            2.4,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SC2qa",
+                              "fill": "$color-black",
+                              "content": "description and images",
+                              "lineHeight": 2,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F6cKLz",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gEmWO",
+                  "name": "div",
+                  "context": "div",
+                  "height": 400,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZrPn1",
+                      "name": "a",
+                      "context": "a",
+                      "height": 462.4,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "mPBs5",
+                          "name": "img",
+                          "context": "img",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "layouts-assets/7f1169686eda0afc.jpg",
+                            "mode": "stretch"
+                          },
+                          "width": 608.13,
+                          "height": 456.09
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nIta6",
+                  "name": "div",
+                  "context": "div",
+                  "width": 640.12,
+                  "height": 800,
+                  "fill": "$color-cream",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eB0MQ",
+                      "x": 0,
+                      "y": 311.26,
+                      "name": "a",
+                      "context": "a",
+                      "layout": "vertical",
+                      "padding": [
+                        32,
+                        0,
+                        15.99,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ZjYh9",
+                          "name": "Ayahuasca Science Mapping",
+                          "context": "h3",
+                          "height": 24,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PDlBM",
+                              "fill": "$color-black",
+                              "content": "Ayahuasca Science Mapping",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-5",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "H3Fwt",
+                      "x": 0,
+                      "y": 383.26,
+                      "name": "ul",
+                      "context": "ul",
+                      "width": 511.99,
+                      "height": 24,
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        16
+                      ],
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Xmag4",
+                          "name": "website",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "website",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g3NTYz",
+                      "x": 0,
+                      "y": 439.26,
+                      "name": "a",
+                      "context": "a",
+                      "width": 151.25,
+                      "height": 49.47,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "qqXjP",
+                          "name": "description and images",
+                          "context": "span",
+                          "width": "fill_container",
+                          "height": 33.48,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            2.4,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lfLKu",
+                              "fill": "$color-black",
+                              "content": "description and images",
+                              "lineHeight": 2,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aL1ou",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dFlwJ",
+                  "name": "div",
+                  "context": "div",
+                  "height": 400,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nE8kj",
+                      "name": "a",
+                      "context": "a",
+                      "height": 462.4,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "b5nGn",
+                          "name": "img",
+                          "context": "img",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "layouts-assets/1058ee4c7f9c74ed.jpg",
+                            "mode": "stretch"
+                          },
+                          "width": 608.13,
+                          "height": 456.09
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YHEq8",
+                  "name": "div",
+                  "context": "div",
+                  "width": 640.12,
+                  "height": 800,
+                  "fill": "$color-mint",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rQkWq",
+                      "x": 0,
+                      "y": 311.26,
+                      "name": "a",
+                      "context": "a",
+                      "layout": "vertical",
+                      "padding": [
+                        32,
+                        0,
+                        15.99,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "IGKNe",
+                          "name": "Venice Time Machine",
+                          "context": "h3",
+                          "height": 24,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "T7PTn",
+                              "fill": "$color-black",
+                              "content": "Venice Time Machine",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-5",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xWdOp",
+                      "x": 0,
+                      "y": 383.26,
+                      "name": "ul",
+                      "context": "ul",
+                      "height": 24,
+                      "gap": 128.1,
+                      "padding": [
+                        0,
+                        11.99,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C97N9d",
+                          "name": "web app",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "web app",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tTeWy",
+                          "name": "interaction design",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "interaction design",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "I4gFBI",
+                          "name": "visual identity",
+                          "context": "li",
+                          "fill": "$color-black",
+                          "content": "visual identity",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g0hzLf",
+                      "x": 0,
+                      "y": 439.26,
+                      "name": "a",
+                      "context": "a",
+                      "width": 151.25,
+                      "height": 49.47,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HvXGh",
+                          "name": "description and images",
+                          "context": "span",
+                          "width": "fill_container",
+                          "height": 33.48,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            2.4,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "oNvkZ",
+                              "fill": "$color-black",
+                              "content": "description and images",
+                              "lineHeight": 2,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SHper",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "AC149",
+                  "name": "div",
+                  "context": "div",
+                  "height": 400,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xJ49Y",
+                      "name": "a",
+                      "context": "a",
+                      "height": 462.4,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "Id1ZE",
+                          "name": "img",
+                          "context": "img",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "layouts-assets/fefd8a2131e1d80a.jpg",
+                            "mode": "stretch"
+                          },
+                          "width": 608.13,
+                          "height": 456.09
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RAVim",
+                  "name": "div",
+                  "context": "div",
+                  "width": 640.12,
+                  "height": 800,
+                  "fill": "$color-dark-grey",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Srn7Z",
+                      "x": 0,
+                      "y": 311.26,
+                      "name": "a",
+                      "context": "a",
+                      "layout": "vertical",
+                      "padding": [
+                        32,
+                        0,
+                        15.99,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "x7aCY",
+                          "name": "Clipac",
+                          "context": "h3",
+                          "height": 24,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qyuca",
+                              "fill": "$color-white",
+                              "content": "Clipac",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-5",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Qyu7h",
+                      "x": 0,
+                      "y": 383.26,
+                      "name": "ul",
+                      "context": "ul",
+                      "height": 24,
+                      "gap": 151.69,
+                      "padding": [
+                        0,
+                        11.99,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lMdSh",
+                          "name": "website",
+                          "context": "li",
+                          "fill": "$color-white",
+                          "content": "website",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "M8Qcq",
+                          "name": "visual identity",
+                          "context": "li",
+                          "fill": "$color-white",
+                          "content": "visual identity",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "D7LxGM",
+                          "name": "consulting",
+                          "context": "li",
+                          "fill": "$color-white",
+                          "content": "consulting",
+                          "lineHeight": 2,
+                          "fontFamily": "$font-native",
+                          "fontSize": "$text-size-7",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "X5Olp7",
+                      "x": 0,
+                      "y": 439.26,
+                      "name": "a",
+                      "context": "a",
+                      "width": 151.25,
+                      "height": 49.47,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        15.99
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "W95nn",
+                          "name": "description and images",
+                          "context": "span",
+                          "width": "fill_container",
+                          "height": 33.48,
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            2.4,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FkaE5",
+                              "fill": "$color-white",
+                              "content": "description and images",
+                              "lineHeight": 2,
+                              "fontFamily": "$font-native",
+                              "fontSize": "$text-size-7",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WTsFJ",
+          "name": "div",
+          "context": "div",
+          "width": "fill_container",
+          "height": 800,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Xy5Ik",
+              "name": "div",
+              "context": "div",
+              "layout": "vertical",
+              "padding": [
+                128,
+                8
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NhtYC",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S7dQb",
+                      "name": "SP web",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "SP web",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eY0Bw",
+                      "name": "Software",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "Software",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YCVDb",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O84hma",
+                      "name": "PAM intranet",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "PAM intranet",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J4Miya",
+                      "name": "Intranet",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "Intranet",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WJlPN",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y3zR5N",
+                      "name": "Candide",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "Candide",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZiuIb",
+                      "name": "iPad app",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "iPad app",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wsu7i",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qsD3a",
+                      "name": "Pictet AM",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "Pictet AM",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BOVMo",
+                      "name": "iPad app",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "iPad app",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "opEHH",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zbBKI",
+                      "name": "Bookworld",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "Bookworld",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YsvCu",
+                      "name": "iPad app",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "iPad app",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KMKbl",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LRbvL",
+                      "name": "vanzoetendaal.com",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "vanzoetendaal.com",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "x8rvua",
+                      "name": "E-commerce",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "E-commerce",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pi90G",
+                  "name": "div",
+                  "context": "div",
+                  "clip": true,
+                  "width": 752.01,
+                  "height": 55.99,
+                  "stroke": "#fafafa",
+                  "strokeWidth": {
+                    "bottom": 3.54
+                  },
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    0,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H5II1j",
+                      "name": "Omega Boutique Tool",
+                      "context": "h3",
+                      "fill": "$color-black",
+                      "content": "Omega Boutique Tool",
+                      "lineHeight": 1.04,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-4",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sbH4L",
+                      "name": "iPad app",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "content": "iPad app",
+                      "lineHeight": 1.49,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-6",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Px87w",
+          "name": "div",
+          "context": "div",
+          "width": "fill_container",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "q23aGL",
+              "name": "div",
+              "context": "div",
+              "fill": [
+                "$color-ice-blue",
+                {
+                  "type": "image",
+                  "enabled": true,
+                  "url": "layouts-assets/7663e5913d90cac9.png",
+                  "mode": "stretch"
+                },
+                {
+                  "type": "image",
+                  "enabled": true,
+                  "url": "layouts-assets/monday12-e1.png",
+                  "mode": "fill"
+                }
+              ],
+              "width": 640.12,
+              "height": 800
+            },
+            {
+              "type": "frame",
+              "id": "su9uS",
+              "name": "div",
+              "context": "div",
+              "width": "fill_container",
+              "padding": [
+                0,
+                "$space-4"
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bcoS4",
+                  "name": "div",
+                  "context": "div",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 15.99,
+                  "padding": [
+                    16,
+                    16,
+                    15.99,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H2Vbt7",
+                      "name": "Have a software or website project? Feel",
+                      "context": "p",
+                      "fill": "$color-black",
+                      "textGrowth": "fixed-width-height",
+                      "width": "fill_container",
+                      "height": 63.99,
+                      "content": "I'm looking for a full-time Product Designer position. Open to select freelance projects too. Reach me at job@lundimardi.info",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uguDj",
+                      "name": "e-mail",
+                      "context": "a",
+                      "width": 58.68,
+                      "height": 51.07,
+                      "layout": "vertical",
+                      "padding": [
+                        16,
+                        0,
+                        4,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "id": "mwIsm",
+                          "type": "ref",
+                          "ref": "yvThZ",
+                          "descendants": {
+                            "K7RDB": {
+                              "content": "Send an e-mail",
+                              "fontSize": "$text-size-4"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RpkQ0",
+          "layoutPosition": "absolute",
+          "x": 928.18,
+          "y": 5024,
+          "name": "a",
+          "context": "a",
+          "width": "fit_content(63.98)",
+          "height": "fit_content(111.98)",
+          "layout": "vertical"
+        },
+        {
+          "type": "frame",
+          "id": "u2biC",
+          "layoutPosition": "absolute",
+          "x": 640.1199999999999,
+          "y": 0,
+          "name": "nav",
+          "context": "nav",
+          "width": 640,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "htaPl",
+              "name": "div",
+              "context": "div",
+              "clip": true,
+              "width": "fill_container",
+              "height": 64,
+              "gap": 137.6,
+              "padding": [
+                0,
+                "$space-4"
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DFFZc",
+                  "layoutPosition": "absolute",
+                  "x": -624.13,
+                  "y": 0,
+                  "name": "LM",
+                  "context": "a",
+                  "height": 55.99,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "h4d3G",
+                      "fill": "$color-black",
+                      "content": "LM",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v8KJf",
+                  "name": "Work",
+                  "context": "a",
+                  "height": 63.99,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qAUvK",
+                      "fill": "$color-black",
+                      "content": "Work",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Kid2y",
+                  "name": "References",
+                  "context": "a",
+                  "height": 63.99,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cx02F",
+                      "fill": "$color-black",
+                      "content": "References",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QgxG7",
+                  "name": "Contact",
+                  "context": "a",
+                  "height": 63.99,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PmyH0",
+                      "fill": "$color-black",
+                      "content": "Contact",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-native",
+                      "fontSize": "$text-size-5",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Hgsye",
+              "layoutPosition": "absolute",
+              "x": -608.4800000000105,
+              "y": 0,
+              "name": "LM",
+              "context": "a",
+              "height": 55.99,
+              "layout": "vertical",
+              "padding": [
+                16,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iGkLi",
                   "fill": "$color-black",
                   "content": "Gaël Paccard",
                   "lineHeight": 1.5,

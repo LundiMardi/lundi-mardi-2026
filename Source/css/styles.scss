@@ -146,11 +146,145 @@ nav div {
   max-width: 378px;
 }
 .hero-status {
-  width: 115px;
+  width: auto;
+  max-width: 220px;
   padding: 16px 0;
 }
 .hero-status p {
   margin: 0 0 4px;
+}
+
+/* alt hero */
+.hero-visual {
+  position: relative;
+  padding: 32px 32px 0;
+  gap: 24px;
+  background-color: #edfaf8;
+  @media screen and (min-width: $large) {
+    padding: 64px 32px;
+    background-color: white;
+  }
+}
+.hero-tagline {
+  position: absolute;
+  top: 56px;
+  left: 16px;
+  max-width: 320px;
+  margin: 0;
+}
+.hero-intro-panel {
+  padding: 32px 32px 0;
+  @media screen and (min-width: $large) {
+    padding: 64px 32px;
+  }
+  @media screen and (min-width: $xlarge) {
+    justify-content: flex-start;
+  }
+}
+.hero-intro {
+  padding: 0 16px;
+}
+.hero-greeting {
+  max-width: 378px;
+  margin: 0 0 16px;
+}
+
+/* Nine Dots, 96 x 96 (see design/nine-dots-prod.html) */
+.nine-dots {
+  --nd-size: 96px;
+  --nd-loop: 360;
+  --nd-equal-r: 9;
+  --nd-up: 0.8s;
+  --nd-down: 0.15s;
+  --nd-ease: cubic-bezier(0.35, 0, 0.07, 1);
+  --nd-pip: #fff;
+  --nd-pip-size: 3px;
+  --nd-fade: 0.2s;
+  --nd-light: #fff;
+  --nd-dark: #000;
+  --nd-base: 61.8;
+  --nd-s-equal: calc(var(--nd-equal-r) / var(--nd-base));
+
+  position: relative;
+  display: block;
+  flex: none;
+  width: var(--nd-size);
+  aspect-ratio: 1;
+  isolation: isolate;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nine-dots .nd-dot {
+  --nd-s-rest: calc(var(--nd-r) / var(--nd-base));
+  --nd-dur: var(--nd-up);
+  position: absolute;
+  left: calc(var(--nd-x) / 260 * 100%);
+  top: calc(var(--nd-y) / 260 * 100%);
+  width: calc(var(--nd-base) * 2 / 260 * 100%);
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  scale: var(--nd-s-rest);
+  transition: scale var(--nd-dur) var(--nd-ease);
+}
+
+.nine-dots .nd-disc {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(90deg, var(--nd-light), var(--nd-dark) 50%, var(--nd-light));
+  will-change: transform;
+  animation: nd-spin calc(var(--nd-loop) * 1s) linear infinite;
+}
+
+@keyframes nd-spin {
+  to {
+    transform: rotate(calc(var(--nd-turns) * -360deg));
+  }
+}
+
+.nine-dots[data-nd-mode="hover"] .nd-disc {
+  animation-play-state: paused;
+}
+
+.nine-dots[data-nd-mode="hover"] .nd-dot,
+.nine-dots .nd-dot[data-nd-down] {
+  scale: var(--nd-s-equal);
+}
+
+.nine-dots .nd-dot[data-nd-down] {
+  --nd-dur: var(--nd-down);
+}
+
+.nine-dots .nd-pip {
+  position: absolute;
+  left: calc(var(--nd-x) / 260 * 100%);
+  top: calc(var(--nd-y) / 260 * 100%);
+  width: var(--nd-pip-size);
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: var(--nd-pip);
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity var(--nd-fade) ease;
+}
+.nine-dots .nd-pip.on {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nine-dots .nd-disc {
+    animation: none;
+  }
+  .nine-dots .nd-dot,
+  .nine-dots .nd-pip {
+    transition: none;
+  }
 }
 
 .project-row {
@@ -161,9 +295,6 @@ nav div {
   gap: 16px;
   padding: 0 8px;
   border-bottom: 4px #fafafa solid;
-}
-#olderProjects .project-row {
-  border-bottom: none;
 }
 .project-row h3 {
   @extend .flex-none;
@@ -178,6 +309,80 @@ nav div {
   @extend .flex-none;
   text-decoration: none;
   color: black;
+}
+
+.section-title-col {
+  padding: 32px 32px 0;
+  @media screen and (min-width: $large) {
+    padding: 64px 32px;
+  }
+}
+.section-list-col {
+  padding: 0 0 64px;
+  @media screen and (min-width: $large) {
+    padding: 64px 32px;
+    justify-content: flex-start;
+  }
+}
+.section-accent-col {
+  min-height: 96px;
+}
+#recentProjects .section-title-col {
+  background-color: #f2dcaa;
+  @media screen and (min-width: $large) {
+    background-color: transparent;
+  }
+}
+#olderProjects .section-title-col {
+  background-color: #363636;
+  color: white;
+  @media screen and (min-width: $large) {
+    background-color: white;
+    color: black;
+  }
+}
+.recent-projects-list {
+  max-width: 48rem;
+  @media screen and (min-width: $large) {
+    max-width: 480px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.project-row-new {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.2s ease;
+}
+.project-row-text {
+  flex: auto;
+}
+.project-row-text h3,
+.project-row-text p {
+  margin: 0 0 4px;
+}
+.project-link {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 4px;
+}
+.arrow-icon {
+  color: $cold-grey-light;
+}
+.project-row-new:hover {
+  background-color: rgb(243, 222, 227);
+}
+.project-row-new:hover .project-link,
+.project-row-new:hover .arrow-icon {
+  color: $navy-blue;
 }
 
 .projectItem {
